@@ -24,27 +24,18 @@ public class PullToRefreshRecyclerViewEmptySupport extends PullToRefreshBase<Rec
 
     public PullToRefreshRecyclerViewEmptySupport(Context context) {
         super(context);
-        initialize();
     }
 
     public PullToRefreshRecyclerViewEmptySupport(Context context, AttributeSet attrs) {
         super(context, attrs);
-        initialize();
     }
 
     public PullToRefreshRecyclerViewEmptySupport(Context context, Mode mode) {
         super(context, mode);
-        initialize();
     }
 
     public PullToRefreshRecyclerViewEmptySupport(Context context, Mode mode, AnimationStyle animStyle) {
         super(context, mode, animStyle);
-        initialize();
-    }
-
-    private void initialize() {
-        setHeaderLayout(mHeaderLayout);
-        setFooterLayout(mFooterLayout);
     }
 
     @Override
