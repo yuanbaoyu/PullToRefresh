@@ -24,6 +24,7 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.AbsSavedState;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -835,7 +836,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 
 			// Let super Restore Itself
 			Parcelable state1 = bundle.getParcelable(STATE_SUPER);
-			if(state1 != null && state1 instanceof BaseSavedState) {
+			if(state1 != null && state1 instanceof AbsSavedState) {
 				super.onRestoreInstanceState(bundle.getParcelable(STATE_SUPER));
 			}
 
